@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 15% 85%; 
+    grid-template-rows: auto auto 1fr auto; 
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.sidebar {
+    grid-row: 1; 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+
+    .logo img {
+        width: 80px; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+    }
+    
+
+
+.sidebar-background img {
+    width: 100%;
+    height: 1000px;
+}
+
+
+.header {
+    grid-column: 2;
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid white; 
+}
+
+.header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+
+.nav {
+    grid-column: 2;
+    background-color: #111;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid white; 
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+
+}
+
+.nav ul li a:hover {
+    background-color: #555; 
+}
+.album-gallery {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    background-color: #111;
+}
+
+
+
+
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+.footer {
+    grid-column: 2;
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    border-top: 2px solid white; 
+}
